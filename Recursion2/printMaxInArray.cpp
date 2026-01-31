@@ -11,7 +11,7 @@ using namespace std;
 // }
 
 int maxInArray(int arr[],int n,int idx){
-    if(idx==n)  return INT_MIN;
+    if(idx==n-1)  return arr[idx];
     return max(arr[idx],maxInArray(arr,n,idx+1));
 }
 int main(){
